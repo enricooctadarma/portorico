@@ -26,6 +26,17 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6SH66LTDM1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6SH66LTDM1'); // Ganti dengan Measurement ID GA4 kamu
+</script>
+
+
+
 </head>
 
 <body class="index-page"> 
@@ -38,12 +49,30 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#" id="theme-toggle" class="nav-link">  <i class="bi bi-moon"></i> <span>Light/Dark Mode </span></a></li>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+<li><a href="#" id="theme-toggle" class="nav-link" onclick="gtag('event','click',{event_category:'Navigation',event_label:'Theme Toggle'})">
+  <i class="bi bi-moon"></i> <span>Light/Dark Mode</span>
+</a></li>
+
+<li><a href="#hero" class="active nav-link" onclick="gtag('event','click',{event_category:'Navigation',event_label:'Home'})">
+  <i class="bi bi-house navicon"></i><span>Home</span>
+</a></li>
+
+<li><a href="#about" class="nav-link" onclick="gtag('event','click',{event_category:'Navigation',event_label:'About'})">
+  <i class="bi bi-person navicon"></i><span>About</span>
+</a></li>
+
+<li><a href="#resume" class="nav-link" onclick="gtag('event','click',{event_category:'Navigation',event_label:'Resume'})">
+  <i class="bi bi-file-earmark-text navicon"></i><span>Resume</span>
+</a></li>
+
+<li><a href="#portfolio" class="nav-link" onclick="gtag('event','click',{event_category:'Navigation',event_label:'Portfolio'})">
+  <i class="bi bi-images navicon"></i><span>Portfolio</span>
+</a></li>
+
+<li><a href="#contact" class="nav-link" onclick="gtag('event','click',{event_category:'Navigation',event_label:'Contact'})">
+  <i class="bi bi-envelope navicon"></i><span>Contact</span>
+</a></li>
+
 
        
       </ul>
@@ -66,14 +95,15 @@
             <h2>Enrico Octadarma Hulu</h2>
             <p>I'm <span class="typed" data-typed-items="Graphic Designer, Student, Mobile App & Web Developer, Freelancer,">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links">
-              <a href="https://wa.me/6285212458071"><i class="bi bi-whatsapp"></i></a>
-              <a href="mailto:enricohulu18@gmail.com"><i class="bi bi-envelope navicon"></i></a>
-              <a href="https://www.youtube.com/@enricooctadarmahulu"><i class="bi bi-youtube"></i></a>
-              <a href="https://web.facebook.com/enricooctadarma.hulu?locale=id_ID"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/enricooctadarma/"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/enrico-hulu/"><i class="bi bi-linkedin"></i></a>
-              <a href="https://www.discordapp.com/users/962307079438225458"><i class="bi bi-discord"></i></a>
-              <a href="https://github.com/enricooctadarma"><i class="bi bi-github"></i></a>
+<a href="https://wa.me/6285212458071" onclick="gtag('event','click',{event_category:'Social',event_label:'WhatsApp'})"><i class="bi bi-whatsapp"></i></a>
+<a href="mailto:enricohulu18@gmail.com" onclick="gtag('event','click',{event_category:'Social',event_label:'Email'})"><i class="bi bi-envelope navicon"></i></a>
+<a href="https://www.youtube.com/@enricooctadarmahulu" onclick="gtag('event','click',{event_category:'Social',event_label:'YouTube'})"><i class="bi bi-youtube"></i></a>
+<a href="https://web.facebook.com/enricooctadarma.hulu?locale=id_ID" onclick="gtag('event','click',{event_category:'Social',event_label:'Facebook'})"><i class="bi bi-facebook"></i></a>
+<a href="https://www.instagram.com/enricooctadarma/" onclick="gtag('event','click',{event_category:'Social',event_label:'Instagram'})"><i class="bi bi-instagram"></i></a>
+<a href="https://www.linkedin.com/in/enrico-hulu/" onclick="gtag('event','click',{event_category:'Social',event_label:'LinkedIn'})"><i class="bi bi-linkedin"></i></a>
+<a href="https://www.discordapp.com/users/962307079438225458" onclick="gtag('event','click',{event_category:'Social',event_label:'Discord'})"><i class="bi bi-discord"></i></a>
+<a href="https://github.com/enricooctadarma" onclick="gtag('event','click',{event_category:'Social',event_label:'GitHub'})"><i class="bi bi-github"></i></a>
+
 
 
             </div>
