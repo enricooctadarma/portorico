@@ -759,12 +759,12 @@ section,
   margin-right: 0;
 }
 
-@media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
-    font-size: 14px;
-    margin: 0 0 10px 0;
-  }
-}
+@media (max-width: 768px) {
+  .portfolio .portfolio-item img {
+    height: 180px; /* sebelumnya mungkin 280px di desktop */
+    width: 100%;
+    object-fit: cover;
+  }}
 
 /* --- Portfolio Uniform Layout Fix --- */
 .portfolio .portfolio-item {
